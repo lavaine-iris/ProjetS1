@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0"/>
-    <title>Page d'accueil</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/script.js"></script>
-  </head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Mobilization For Afghan Women">
 
-  <body>
-    <header>
-      <a href="/">
+    <title>Mobilization For Afghan Women</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    
+  </head>
+
+  <body class="couleurs">
+    <header class="header container">
+      <a class="header__logo" href="/">
         <img src="icons/logo.svg" alt='Logo de Mobilization For Afghan Women'>
       </a>
 
-      <a href="/">
-        <img src="icons/menu-open.svg" alt='Menu'>
-      </a>
+      <button class="header__navigation">
+        <img src="icons/menu-open.svg" alt="icone de menu">
+      </button>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="histoire.html">L'histoire des femmes en Afghanistan</a></li>
-          <li><a href="feministe.html">Une vie bouleversée par le retour des talibans</a></li>
-          <li><a href="reportage.html">Un bond dans le passé pour les femmes afghanes ?</a></li>
-          <li><a href="glossaire.html">Glossaire</a></li>
-          <li><a href="autres-projets.html">Autres projets</a></li>
-          <li><a href="contact.html">Contact</a></li>
+
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="histoire.html">L'histoire des femmes en Afghanistan</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="feministe.html">Une vie bouleversée par le retour des talibans</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="reportage.html">Un bond dans le passé pour les femmes afghanes ?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="glossaire.html">Glossaire</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="autres-projets.html">Autres projets</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
-
+      </div>
     </header>
 
     <main>
       
       <article>
-      <img src="images/reportage-manifestantes.webp" alt="Reportage manifestation à Kaboul">
-      <h2>
+      <h5>
         Découvrez l’histoire des femmes en Afghanistan, 
         comment elles se sont battues pour travailler, 
         étudier, se détacher des hommes. Portez un regard sur 
         la situation critique que les femmes sont en train de vivre 
         dans ce pays depuis le retour des talibans au pouvoir. 
-      </h2>
+      </h5>
       </article>
 
       <article>
@@ -51,7 +68,7 @@
         <img src="images/afghanes-intro.webp" alt="Femmes afghanes dans les années 70">
         <p>De 1920 à nos jours, la vie des femmes afghanes 
         n’a cessé d’être bouleversée par des restrictions.</p>
-        <a href="histoire.html">Voir article</a>
+        <a class="bouton" href="histoire.html">Voir article</a>
       </article>
 
       <article>
@@ -59,7 +76,7 @@
         <img src="images/palwasha.webp" alt="Portrait de Palwasha">
         <p>Découvrez le portrait d’une féministe engagée, Palwasha, 
         qui s’est réfugiée en France à cause de la menace des talibans.</p> 
-        <a href="feministe.html">Voir article</a>
+        <a class="bouton" href="feministe.html">Voir article</a>
       </article>
 
       <article>
@@ -68,17 +85,19 @@
         <p>Reportage qui montre les manifestations des femmes afghanes qui se 
         battent pour leurs droits  depuis le retour des talibans au pouvoir 
         en août 2021.</p> 
-        <a href="reportage.html">Voir article</a>
+        <a class="bouton" href="reportage.html">Voir article</a>
       </article>
   
         </main>
 
-        <footer>
+        <footer class="footer container">
 
-          <h3>Contact</h3>
+          <h4 class="footer__title">Contact</h4>
             Iris Lavaine - Groupe B2<br>
+            <address class="footer__address">
             <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a>
-            <h3>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></h3>
+            </address>
+            <h4 class="footer__title">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></h4>
 
         </footer>
 

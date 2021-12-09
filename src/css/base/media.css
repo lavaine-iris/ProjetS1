@@ -1,0 +1,15 @@
+img {
+    max-width: 100%;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  figcaption {
+    font-size: var(--text-xs);
+    color: var(--gray-600);
+  }

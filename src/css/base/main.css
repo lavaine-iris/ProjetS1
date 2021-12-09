@@ -1,0 +1,64 @@
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: var(--space3x);
+  padding-right: var(--space3x);
+}
+
+h1 {
+  font-family: var(--font-mono);
+  font-size: var(--title-xxl);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+h2 {
+  font-family: var(--font-mono);
+  font-size: var(--title-lg);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+h3 {
+  font-family: var(--font-mono);
+  font-size: var(--title-home);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+h5{
+  font-family: var(--font-home);
+  font-size: var(--text-sm);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+p{
+  font-family: var(--font-sans-serif);
+  font-size: var(--text-tweet);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+blockquote{
+  font-family: var(--font-citation);
+  font-size: var(--title-home);
+}
+
+.couleurs{
+  background-color: var(--pink);
+}
+
+.bouton{
+  font-family: var(--font-bouton);
+  font-size: var(--title-home);
+  padding-right: 20px;
+  padding-left: 250px;
+}
+
+
+  

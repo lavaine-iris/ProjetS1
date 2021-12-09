@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0"/>
-    <title>Page une vie bouleversée par le retour des talibans</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/script.js"></script>
-  </head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Mobilization For Afghan Women">
+
+    <title>Mobilization For Afghan Women</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    
+  </head>
 
   <body>
 
-    <header>
-      <a href="/">
+    <header class="header container">
+      <a class="header__logo" href="/">
         <img src="icons/logo.svg" alt='Logo de Mobilization For Afghan Women'>
       </a>
 
-      <a href="/">
-        <img src="icons/menu-open.svg" alt='Menu'>
-      </a>
+      <button class="header__navigation">
+        <img src="icons/menu-open.svg" alt="icone de menu">
+      </button>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="histoire.html">L'histoire des femmes en Afghanistan</a></li>
-          <li><a href="feministe.html">Une vie bouleversée par le retour des talibans</a></li>
-          <li><a href="reportage.html">Un bond dans le passé pour les femmes afghanes ?</a></li>
-          <li><a href="glossaire.html">Glossaire</a></li>
-          <li><a href="autres-projets.html">Autres projets</a></li>
-          <li><a href="contact.html">Contact</a></li>
+
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="histoire.html">L'histoire des femmes en Afghanistan</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="feministe.html">Une vie bouleversée par le retour des talibans</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="reportage.html">Un bond dans le passé pour les femmes afghanes ?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="glossaire.html">Glossaire</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="autres-projets.html">Autres projets</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
-
+      </div>
     </header>
 
     <main>
@@ -94,11 +112,15 @@
 
     </main>
 
-    <footer>
-      <h3>Contact</h3>
-        <p>Iris Lavaine - Groupe B2<br></p>
+    <footer class="footer container">
+
+      <h4 class="footer__title">Contact</h4>
+        Iris Lavaine - Groupe B2<br>
+        <address class="footer__address">
         <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a>
-        <h3>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></h3>
+        </address>
+        <h4 class="footer__title">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></h4>
+
     </footer>
       
   </body>
