@@ -30,6 +30,11 @@ h3 {
   padding-left: 20px;
 }
 
+h4{
+  font-family: var(--font-mono);
+  font-size: var(--text-tweet);
+}
+
 h5{
   font-family: var(--font-home);
   font-size: var(--text-sm);
@@ -59,6 +64,22 @@ blockquote{
   padding-right: 20px;
   padding-left: 250px;
 }
+
+video{
+  right: 20px;
+}
+
+.couleurs-fond{
+  background-color: var(--white-background);
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 
 
   

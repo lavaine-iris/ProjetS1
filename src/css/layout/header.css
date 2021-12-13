@@ -3,13 +3,11 @@
 }
 
 .header__navigation{
-    position: absolute; 
+    position: relative; 
     background-color: transparent;
     border: none;
-    top: 20px;
-    right: 15px;
-    width: 32px;
-    height: 32px; 
+    top: auto;
+    left : 260px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,7 +16,7 @@
 .header__logo{
     position: relative; 
     background-color: transparent;
-    top: 20px;
+    top: 37px;
     left: 15px;
     width: 228px;
     height: 29px; 
