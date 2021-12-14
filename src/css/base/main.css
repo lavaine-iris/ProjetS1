@@ -23,6 +23,10 @@ h2 {
   padding-left: 20px;
 }
 
+a{
+  color: black;
+}
+
 h3 {
   font-family: var(--font-mono);
   font-size: var(--title-home);
@@ -61,8 +65,16 @@ blockquote{
 .bouton{
   font-family: var(--font-bouton);
   font-size: var(--title-home);
-  padding-right: 20px;
-  padding-left: 250px;
+  position: relative;
+  right: 20px;
+  left: 200px;
+  display: inline-block;
+  background-color: var(--white);
+  border: 4px double black;
+  color: var(--black);
+  text-align: center;
+  padding: 10px;
+  width: 150px;
 }
 
 video{
@@ -77,6 +89,53 @@ video{
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+a:link 
+{ 
+ text-decoration: none; 
+ color: black;
+} 
+
+.frise{ 
+    position: relative;
+    left: 157px;
+		height: 40px; 
+		width: 40px; 
+		background-color: var(--pink-3);
+		border-radius: 50%;
+}
+
+.TexteDroite{
+  position: relative;
+  padding-right: 20px;
+  padding-left: 230px;
+  text-align: center 
+}
+
+.TexteGauche{
+  position: relative;
+  padding-right: 20px;
+  padding-left: 230px;
+  text-align: center 
+}
+
+.DateFrise{
+  position: relative;
+  width  : 112px;
+  height : 36px;
+  background : var(--pink);
+}
+
+.LigneVerticale{
+  position: absolute;
+  top: 3100px;
+  bottom: 200px;
+  right: 185px; 
+  left: 175px;
+  border-left: 4px solid black; 
+  height: 900px; 
+  display: inline-block;
 }
 
 
