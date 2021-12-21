@@ -24,3 +24,5 @@
 /* Components */
 @import url('components/menu.css');
 @import url('components/hero.css');
+@import url('components/searchform.css');
+@import url('components/button.css');

@@ -1,7 +1,14 @@
-.header{
-    background-color: transparent;
-    /*position: fixed;*/
-}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: var(--space2x) var(--space3x);
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+  }
 
 .header__navigation{
     position: relative; 
@@ -17,8 +24,12 @@
 .header__logo{
     position: relative; 
     background-color: transparent;
-    top: 37px;
+    top: 20px;
     left: 15px;
     width: 228px;
-    height: 29px; 
+    height: 30px; 
+}
+
+.header--atTop {
+    background-color: white;
 }
