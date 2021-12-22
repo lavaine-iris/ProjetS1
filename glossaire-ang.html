@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +10,60 @@
 
     <link rel="stylesheet" href="src/css/style.css">
     
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
 
-  <body class="couleurs-fond">
+    <body  x-data="{ atTop: true }" class="couleurs"> 
 
-    <header>
-      <a href="/">
-        <img src="icons/logo.svg" alt='Logo de Mobilization For Afghan Women'>
-      </a>
+      <header class="header container" 
+              @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+              :class="{ 'header--atTop' : !atTop }">
 
-      <a href="/">
-        <img src="icons/menu-open.svg" alt='Menu'>
-      </a>
+      <div class="header__start">
+        <a href="home-page.html">
+          <img class="header__logo" src="icons/logo.svg" alt="logo Mobilization For Afghan Women">
+        </a>
+      </div>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home page</a></li>
-          <li><a href="histoire.html">Women's history in Afghanistan  </a></li>
-          <li><a href="feministe.html">A life turned upside down by the return of the Taliban</a></li>
-          <li><a href="reportage.html">A step back in time for Afghan women?</a></li>
-          <li><a href="glossaire.html">Glossary</a></li>
-          <li><a href="autres-projets.html">Other projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+      <button class="header__menu-btn menu-btn"
+        @pointerdown="menuIsOpen = !menuIsOpen" 
+        :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
+      </button>
+
+
+      <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+        <a href="index.html">
+        <img class="langue__fr" src="icons/Site français.svg" alt="Icône drapeau France">
+        </a>
+        <a href="home-page.html">
+        <img class="langue__eng" src="icons/Site anglais.svg" alt="Icône drapeau Angleterre">
+        </a>
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="home-page.html">Home page</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="histoire-ang.html">Women's history in Afghanistan </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="feministe-ang.html">A life turned upside down by the return of the Taliban</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="reportage-ang.html">A step back in time for Afghan women?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="glossaire-ang.html">Glossary</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="autres-projets-ang.html">Other projects</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact-ang.html">Contact</a>
+          </li>
         </ul>
       </nav>
-
+      </div>
     </header>
 
     <main>
@@ -57,12 +86,16 @@
 
     </main>
 
-    <footer>
-        <h3>Contact</h3>
-          Iris Lavaine - Groupe B2<br>
-          <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a>
-          <h3>Project carried out as part of an educational exercise at the <a href="http://mmimontbeliard.com/">MMi department in Montbeliard</a></h3>
-      </footer>
+    <footer class="footer container">
+
+      <h4 class="footer__title">Contact<br></h4>
+      <h4>Iris Lavaine - Groupe B2<br></h4>
+      <h4><address class="footer__address">
+        <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a></h4>
+        </address>
+        <h4 class="footer__title">Project carried out as part of an educational exercise at the <a href="http://mmimontbeliard.com/">MMi department in Montbeliard</a></h4>
+
+    </footer>
 
     </body>
     </html>

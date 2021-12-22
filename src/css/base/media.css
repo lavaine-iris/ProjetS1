@@ -5,18 +5,21 @@ img {
     padding-left: 20px;
   }
   
-  figure {
+figure {
     margin: 0;
   }
   
-  figcaption {
+figcaption {
     font-size: var(--text-xs);
     color: var(--gray-600);
   }
 
-  video {
+video {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 40px;
     margin-right: 10px;
   }
+
+
+

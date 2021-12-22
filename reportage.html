@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +10,36 @@
 
     <link rel="stylesheet" href="src/css/style.css">
     
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
 
-  <body class="couleurs-fond">
+    <body  x-data="{ atTop: true }" class="couleurs"> 
 
-    <header class="header container">
-      <a class="header__logo" href="/">
-        <img src="icons/logo.svg" alt='Logo de Mobilization For Afghan Women'>
-      </a>
+      <header class="header container" 
+              @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+              :class="{ 'header--atTop' : !atTop }">
 
-      <button class="header__navigation">
-        <img src="icons/menu-open.svg" alt="icone de menu">
+      <div class="header__start">
+        <a href="/">
+          <img class="header__logo" src="icons/logo.svg" alt="logo Mobilization For Afghan Women">
+        </a>
+      </div>
+
+      <button class="header__menu-btn menu-btn"
+        @pointerdown="menuIsOpen = !menuIsOpen" 
+        :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
       </button>
 
 
-      <nav class="header__menu menu">
-        <ul class="menu__list">
+      <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+        <a href="index.html">
+        <img class="langue__fr" src="icons/Site français.svg" alt="Icône drapeau France">
+        </a>
+        <a href="home-page.html">
+        <img class="langue__eng" src="icons/Site anglais.svg" alt="Icône drapeau Angleterre">
+        </a>
+        <ul class="menu__list list-unstyled">
           <li class="menu__item">
             <a class="menu__link" href="index.html">Accueil</a>
           </li>

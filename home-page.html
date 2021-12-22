@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,70 +10,106 @@
 
     <link rel="stylesheet" href="src/css/style.css">
     
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
 
-  <body class="couleurs-fond">
-    <header>
-      <a href="/">
-        <img src="icons/logo.svg" alt='Logo de Mobilization For Afghan Women'>
-      </a>
+    <body  x-data="{ atTop: true }" class="couleurs"> 
 
-      <a href="/">
-        <img src="icons/menu-open.svg" alt='Menu'>
-      </a>
+      <header class="header container" 
+              @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+              :class="{ 'header--atTop' : !atTop }">
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home page</a></li>
-          <li><a href="histoire.html">Women's history in Afghanistan  </a></li>
-          <li><a href="feministe.html">A life turned upside down by the return of the Taliban</a></li>
-          <li><a href="reportage.html">A step back in time for Afghan women?</a></li>
-          <li><a href="glossaire.html">Glossary</a></li>
-          <li><a href="autres-projets.html">Other projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+      <div class="header__start">
+        <a href="home-page.html">
+          <img class="header__logo" src="icons/logo.svg" alt="logo Mobilization For Afghan Women">
+        </a>
+      </div>
+
+      <button class="header__menu-btn menu-btn"
+        @pointerdown="menuIsOpen = !menuIsOpen" 
+        :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
+      </button>
+
+
+      <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+        <a href="index.html">
+        <img class="langue__fr" src="icons/Site français.svg" alt="Icône drapeau France">
+        </a>
+        <a href="home-page.html">
+        <img class="langue__eng" src="icons/Site anglais.svg" alt="Icône drapeau Angleterre">
+        </a>
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="home-page.html">Home page</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="histoire-ang.html">Women's history in Afghanistan </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="feministe-ang.html">A life turned upside down by the return of the Taliban</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="reportage-ang.html">A step back in time for Afghan women?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="glossaire-ang.html">Glossary</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="autres-projets-ang.html">Other projects</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact-ang.html">Contact</a>
+          </li>
         </ul>
       </nav>
-
+      </div>
     </header>
 
     <main>
       
       <article>
-      <img src="images/reportage-manifestantes.webp" alt="Reportage manifestation à Kaboul">
-      <h2>
+
+        <video class="video__presentation" width="297" height="187" controls>
+          <source src="">
+        </video>
+
+      <h5>
         Discover the history of women in Afghanistan. How they fought to be able to work and study. But above all, become aware of the critical situation that women are currently facing in Afghanistan since the return of the Taliban to power.
-      </h2>
+      </h5>
       </article>
 
       <article>
         <h3><a href="histoire.html">Women’s history in Afghanistan</a></h3>
         <img src="images/afghanes-intro.webp" alt="Femmes afghanes dans les années 70">
         <p>From 1920 to the present day, the lives of Afghan women have been continuously disrupted by restrictions.</p>
-        <a href="histoire.html">See article</a>
+        <a class="bouton" href="histoire-ang.html">See article</a>
       </article>
 
       <article>
         <h3><a href="feministe.html">A life turned upside down by the return of the Taliban</a></h3>
         <img src="images/palwasha.webp" alt="Portrait de Palwasha">
         <p>Discover the portrait of a committed feminist, Palwasha, who fled to France because of the Taliban threat.</p> 
-        <a href="feministe.html">See article</a>
+        <a class="bouton" href="feministe.html">See article</a>
       </article>
 
       <article>
         <h3><a href="reportage.html">A step back in time for Afghan women?</a></h3>
         <img src="images/Manifestation-Kaboul.webp" alt="Manifestation à Kaboul">
         <p>A report that shows the protests of Afghan women fighting for their rights since the return of the Taliban to power in August 2021.</p> 
-        <a href="reportage.html">See article</a>
+        <a class="bouton" href="reportage.html">See article</a>
       </article>
   
         </main>
 
-        <footer>
+        <footer class="footer container">
 
-          <h3>Contact</h3>
-            Iris Lavaine - Groupe B2<br>
-            <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a>
-            <h3>Project carried out as part of an educational exercise at the <a href="http://mmimontbeliard.com/">MMi department in Montbeliard</a></h3>
+          <h4 class="footer__title">Contact<br></h4>
+          <h4>Iris Lavaine - Groupe B2<br></h4>
+          <h4><address class="footer__address">
+            <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a></h4>
+            </address>
+            <h4 class="footer__title">Project carried out as part of an educational exercise at the <a href="http://mmimontbeliard.com/">MMi department in Montbeliard</a></h4>
 
         </footer>
 

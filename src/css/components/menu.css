@@ -78,4 +78,24 @@
   left: 60px; 
 }
 
+/* Technique pour transformer les 3 barres du bouton de menu en croix
+Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
+  background-color: var(--black);
+}
+
 

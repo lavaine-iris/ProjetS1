@@ -160,6 +160,11 @@ a:link
   margin: 0;
 }
 
+main{
+  position: relative;
+  margin-top: 80px;
+}
+
 
 
 
