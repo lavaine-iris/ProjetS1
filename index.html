@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="src/css/style.css">
     
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    
   </head>
 
     <body  x-data="{ atTop: true }" class="couleurs"> 
 
       <header class="header container" 
               @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-              :class="{ 'header--atTop' : !atTop }">
+              :class="{ 'header--atTop1' : !atTop }">
 
       <div class="header__start">
         <a href="/">

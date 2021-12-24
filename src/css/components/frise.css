@@ -1,0 +1,52 @@
+.frise{ 
+    position: relative;
+    left: 157px;
+    bottom: 90px;
+		height: 40px; 
+		width: 40px; 
+		background-color: var(--pink-3);
+		border-radius: 50%;
+}
+
+.TexteDroite{
+  position: absolute;
+  padding-right: 20px;
+  padding-left: 230px;
+  text-align: center 
+}
+
+.TexteGauche{
+  position: relative;
+  padding-right: 230px;
+  padding-left: 20px;
+  text-align: center 
+}
+
+.DateFriseGauche{
+  position: relative;
+  padding-right: 230px;
+  padding-left: 20px;
+  width  : 10px;
+  height : 36px;
+  text-align: center;
+}
+
+.DateFriseDroite{
+  position: relative;
+  padding-right: 20px;
+  padding-left: 230px;
+  width  : 112px;
+  height : 36px;
+  text-align: center;
+}
+
+.LigneVerticale{
+  position: absolute;
+  top: 3030px;
+  bottom: 200px;
+  right: 185px; 
+  left: 175px;
+  border-left: 4px solid black; 
+  height: 800px; 
+  display: inline-block;
+}

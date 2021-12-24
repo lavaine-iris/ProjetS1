@@ -33,3 +33,7 @@
 .header--atTop {
     background-color: var(--white-background);
 }
+
+.header--atTop1{
+    background-color: var(--pink);
+}
