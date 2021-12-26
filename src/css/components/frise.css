@@ -1,52 +1,57 @@
-.frise{ 
-    position: relative;
-    left: 157px;
-    bottom: 90px;
-		height: 40px; 
-		width: 40px; 
-		background-color: var(--pink-3);
-		border-radius: 50%;
+* {
+  box-sizing: border-box;
 }
 
-.TexteDroite{
+.timeline{
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.timeline-object {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.timeline-object.complete::after {
+  content: '';
+  display: block;
   position: absolute;
-  padding-right: 20px;
-  padding-left: 230px;
-  text-align: center 
+  
+  width: 4px;
+  height: 150px;
+  background-color: var(--pink-2);
+  
+  left: 23px;
+  top: 50px;
+  transform: translateX(-50%);
 }
 
-.TexteGauche{
-  position: relative;
-  padding-right: 230px;
-  padding-left: 20px;
-  text-align: center 
+.timeline-status {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background-color: var(--pink-2);
 }
 
-.DateFriseGauche{
-  position: relative;
-  padding-right: 230px;
-  padding-left: 20px;
-  width  : 10px;
-  height : 36px;
-  text-align: center;
+.timeline-content {
+  margin-left: 15px;
 }
 
-.DateFriseDroite{
-  position: relative;
-  padding-right: 20px;
-  padding-left: 230px;
-  width  : 112px;
-  height : 36px;
-  text-align: center;
+.timeline-content h3 {
+  color: var(--black);
+  background: var(--pink);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.LigneVerticale{
-  position: absolute;
-  top: 3030px;
-  bottom: 200px;
-  right: 185px; 
-  left: 175px;
-  border-left: 4px solid black; 
-  height: 800px; 
-  display: inline-block;
+.timeline-content span {
+  color: var(--black);
+  font-size: var(--title-home);
+}
+
+span{
+  font-family: var(--font-bouton);
 }

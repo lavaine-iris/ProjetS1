@@ -96,6 +96,13 @@ main{
   margin-top: 80px;
 }
 
+/*Hauteur totale de ligne (texte + interligne) = 2 fois
+ *la hauteur du texte*/
+.p1, .p2, .p3, .p4, .p5, .p6, .p7{
+    line-height: 2em;
+}
+
+
 
 
 
