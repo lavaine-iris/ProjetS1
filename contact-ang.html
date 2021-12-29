@@ -82,31 +82,36 @@
           <p>If you have any questions or if you just want to contact me to leave a comment by e-mail, please fill in the form below:</p>
       </section>
 
-      <form action="/page-traitement-donnees" method="post">
-        <div>
-            <h3>Name :</h3>
-            <label for="nom"></label>
-            <input type="text" id="nom" name="nom" placeholder="[Enter your name]" required>
-        </div>
-        <div>
-            <h3>First name :</h3>
-            <label for="prenom"></label>
-            <input type="text" id="prenom" name="prenom" placeholder="[Enter your first name]" required>
-        </div>
-        <div>
-            <h3>Email :</h3>
-            <label for="Email"></label>
-            <input type="text" id="Email" name="Email" placeholder="[Enter your email address]" required>
-        </div>
-        <div>
-            <h3>Message :</h3>
-            <label for="message"></label>
-            <textarea id="message" name="message" placeholder="[Enter your message]" required></textarea>
-            </div>
-            <div>
-            <button type="submit">Send</button>
-            </div>
-            </form>
+            <form action="/page-traitement-donnees" method="post">
+              <div class="rectangle"></div>
+              <div id="nom">
+                  <h3>Name :</h3>
+                  <label for="nom"></label>
+                  <input type="text" id="nom" name="nom" placeholder="[Enter your name]" required>
+              </div>
+      
+              <div id="prenom">
+                  <h3>First name :</h3>
+                  <label for="prenom"></label>
+                  <input type="text" id="prenom" name="prenom" placeholder="[Enter your first name]" required>
+              </div>
+      
+              <div id="email">
+                  <h3>Email :</h3>
+                  <label for="email"></label>
+                  <input type="text" id="email" name="email" placeholder="[Enter your email address]" required>
+              </div>
+      
+                <div id="message">
+                  <h3>Message :</h3>
+                  <label for="message"></label>
+                  <textarea id="message" name="message" placeholder="Enter your message]" required></textarea>
+                  </div>
+      
+                  <div>
+                  <button class="bouton--envoyer" type="submit">Send</button>
+                  </div>
+                  </form>
 
             <footer class="footer container">
 

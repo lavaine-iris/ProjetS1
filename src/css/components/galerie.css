@@ -1,0 +1,11 @@
+.demo {
+
+  scroll-snap-type: x;
+  overflow-x: scroll;
+  display: flex;
+  margin:2rem auto;
+  width: 375px;    
+  }
+
+
+  

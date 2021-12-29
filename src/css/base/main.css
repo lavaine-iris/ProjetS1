@@ -102,6 +102,31 @@ main{
     line-height: 2em;
 }
 
+/*Mise en place des logos des autres projets*/
+.projet-gauche{
+  margin-left: 20px;
+  max-width: 40%;
+}
+
+.projet-droite{
+  max-width: 40%;
+  position: absolute;
+  top: 165px;
+  left: 200px;
+  bottom: 200px;
+}
+
+.projet{
+  border: thin var(--blue) solid;
+  margin-bottom: 30px;
+}
+
+/*Mise en couleurs des mots pour le glossaire*/
+.mot-glossaire{
+  color: var(--pink-3);
+}
+
+
 
 
 
