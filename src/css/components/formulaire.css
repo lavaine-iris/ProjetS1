@@ -42,6 +42,10 @@
     background : var(--blue);
   }
 
+.formulaire{
+  color: white;
+}
+
 /*Mise en forme du bouton envoyer*/
 .bouton--envoyer{
     font-family: var(--font-bouton);

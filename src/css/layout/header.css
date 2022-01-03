@@ -22,11 +22,12 @@
 }
 
 .header__logo{
+    max-width: 110%;
     position: relative; 
     background-color: transparent;
     top: 3px;
-    left: 25px;
-    width: 250px;
+    left: 5px;
+    width: 270px;
     height: 30px; 
 }
 
