@@ -98,4 +98,10 @@ Ne pas oublier d'ajouter une transition plus haut pour l'animation */
   background-color: var(--black);
 }
 
+/*Permet d'annuler le scrool*/
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+
 
