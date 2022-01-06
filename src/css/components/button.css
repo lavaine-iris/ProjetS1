@@ -60,7 +60,23 @@ button {
   width: 150px;
   height: 40px;
   border: 1px solid var(--black);
+}
 
+.bouton-3{
+  font-family: var(--font-sans-serif);
+  font-size: var(--text-tweet);
+  margin-bottom: 30px;
+  position: relative;
+  right: 20px;
+  left: 180px;
+  display: inline-block;
+  background-color: var(--pink);
+  color: var(--black);
+  text-align: center;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid var(--black);
 }
 
 /*Mise en forme du bouton de la page 404*/
