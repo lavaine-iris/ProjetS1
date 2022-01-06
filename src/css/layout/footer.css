@@ -12,6 +12,8 @@
   }
 
   .footer__address {
+    font-family: var(--font-mono);
+    font-size: var(--text-tweet);
     font-style: normal;
   }
 
