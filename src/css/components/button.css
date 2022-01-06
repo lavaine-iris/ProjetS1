@@ -27,7 +27,7 @@
   left: 200px;
   display: inline-block;
   background-color: var(--white);
-  border: 4px double black;
+  border: 1px solid var(--black);
   color: var(--black);
   text-align: center;
   padding: 10px;
@@ -42,5 +42,24 @@ button {
   background: none;
   padding: 0;
   cursor: pointer;
+}
+
+/*Mise en forme du bouton pour les articles suivants*/
+.bouton-2{
+  font-family: var(--font-sans-serif);
+  font-size: var(--text-tweet);
+  margin-bottom: 20px;
+  position: relative;
+  right: 20px;
+  left: 200px;
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  height: 50px;
+  border: 1px solid var(--black);
+
 }
 

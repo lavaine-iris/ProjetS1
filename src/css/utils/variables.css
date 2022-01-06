@@ -9,31 +9,31 @@
     --pink-3: rgba(255, 115, 125, 1);
     --blue: rgba(97, 120, 140, 1);
 
-  /* Text-size styles */
-  /* base size: base (16px) */
-  --base: 1rem;
-  --title-xxl: 3rem;
-  --title-xl: 1.5rem;
-  --title-lg: 1.25rem;
-  --title-home: 1.125rem;
-  --text-md: 0.94rem;
-  --text-tweet: 0.875rem; 
-  --text-sm: 0.75rem;
-  --text-leg: 0.69rem;
+    /* Text-size styles */
+    /* base size: base (16px) */
+    --base: 1rem;
+    --title-xxl: 3rem;
+    --title-xl: 1.5rem;
+    --title-lg: 1.25rem;
+    --title-home: 1.125rem;
+    --text-md: 0.94rem;
+    --text-tweet: 0.875rem; 
+    --text-sm: 0.75rem;
+    --text-leg: 0.69rem;
 
-  /* Font-family style */
-  --font-mono: 'Staatliches';
-  --font-sans-serif: 'Mulish', sans-serif;
-  --font-home: 'Poppins';
-  --font-bouton: 'Roboto Condensed';
-  --font-citation: 'Arsenal';
-  --font-footer: 'Courier Prime';
-  --font-legende: 'Montserrat'
+    /* Font-family style */
+    --font-mono: 'Staatliches';
+    --font-sans-serif: 'Mulish', sans-serif;
+    --font-home: 'Poppins';
+    --font-bouton: 'Roboto Condensed';
+    --font-citation: 'Arsenal';
+    --font-footer: 'Courier Prime';
+    --font-legende: 'Montserrat'
 
 
-  /* Espaces */
-  --space1x: 8px;
-  --space2x: 16px;
-  --space3x: 24px;
-  --space4x: 48px;
+   /* Espaces */
+    --space1x: 8px;
+    --space2x: 16px;
+    --space3x: 24px;
+    --space4x: 48px;
 }
