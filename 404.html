@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Mobilization For Afghan Women">
+
+    <title>Mobilization For Afghan Women</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    
+  </head>
+
+    <body  x-data="{ atTop: true }"> 
+
+      <header class="header container" 
+              @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+              :class="{ 'header--atTop1' : !atTop }">
+
+      <div class="header__start">
+        <a href="/">
+          <img class="header__logo" src="icons/logo.svg" alt="logo Mobilization For Afghan Women">
+        </a>
+      </div>
+
+      <button class="header__menu-btn menu-btn"
+        @pointerdown="menuIsOpen = !menuIsOpen" 
+        :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
+      </button>
+
+
+      <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+        <a href="index.html">
+        <img class="langue__fr" src="icons/Site français.svg" alt="Icône drapeau France">
+        </a>
+        <a href="home-page.html">
+        <img class="langue__eng" src="icons/Site anglais.svg" alt="Icône drapeau Angleterre">
+        </a>
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="histoire.html">L'histoire des femmes en Afghanistan</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="feministe.html">Une vie bouleversée par le retour des talibans</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="reportage.html">Un bond dans le passé pour les femmes afghanes ?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="glossaire.html">Glossaire</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="autres-projets.html">Autres projets</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+
+        <main>
+            <img src="images/404.jpg" alt="erreur 404">
+
+            <a class="bouton__accueil" href="index.html">Retourner à la page d'accueil</a>
+
+        </main>
+    </body>
+</html>
