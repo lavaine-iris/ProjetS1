@@ -13,58 +13,57 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
 
-    <body  x-data="{ atTop: true }" class="couleurs-fond"> 
+      <body  x-data="{ atTop: true }" class="couleurs-fond"> 
 
-      <header class="header container" 
-              @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-              :class="{ 'header--atTop' : !atTop }">
+        <header class="header container" 
+                @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                :class="{ 'header--atTop' : !atTop }">
 
-      <div class="header__start">
-        <a href="/">
-          <img class="header__logo" src="icons/logo.svg" alt="logo Mobilization For Afghan Women">
-        </a>
-      </div>
+        <div class="header__start">
+          <a href="/">
+            <img class="header__logo" src="icons/logo.svg" alt="logo Mobilization For Afghan Women">
+          </a>
+        </div>
 
-      <button class="header__menu-btn menu-btn"
-        @pointerdown="menuIsOpen = !menuIsOpen" 
-        :class="menuIsOpen && 'menu-btn--open'">
-        <span class="menu-btn__bar"></span>
-      </button>
+        <button class="header__menu-btn menu-btn"
+          @pointerdown="menuIsOpen = !menuIsOpen" 
+          :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+        </button>
 
 
-      <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-        <a href="index.html">
-        <img class="langue__fr" src="icons/site-francais.svg" alt="Icône drapeau France">
-        </a>
-        <a href="home-page.html">
-        <img class="langue__eng" src="icons/site-anglais.svg" alt="Icône drapeau Angleterre">
-        </a>
-        <ul class="menu__list list-unstyled">
-          <li class="menu__item">
-            <a class="menu__link" href="index.html">Accueil</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="histoire.html">L'histoire des femmes en Afghanistan</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="feministe.html">Une vie bouleversée par le retour des talibans</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="reportage.html">Un bond dans le passé pour les femmes afghanes ?</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="glossaire.html">Glossaire</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="autres-projets.html">Autres projets</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      </div>
-    </header>
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <a href="index.html">
+          <img class="langue__fr" src="icons/site-francais.svg" alt="Icône drapeau France">
+          </a>
+          <a href="home-page.html">
+          <img class="langue__eng" src="icons/site-anglais.svg" alt="Icône drapeau Angleterre">
+          </a>
+          <ul class="menu__list list-unstyled">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Accueil</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="histoire.html">L'histoire des femmes en Afghanistan</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="feministe.html">Une vie bouleversée par le retour des talibans</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="reportage.html">Un bond dans le passé pour les femmes afghanes ?</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="glossaire.html">Glossaire</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="autres-projets.html">Autres projets</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
     <main>
       <section>
@@ -72,7 +71,7 @@
 
           <p>Dans le cadre de cet exercice pédagogique, mes autres camarades ont aussi réalisé un projet sur le thème du féminisme, si vous avez aimé mon projet, n’hésitez pas à aller voir leur réalisation. Ils reprennent tous le même thème mais le traitent différemment, c’est donc très intéressant !</p>
 
-          <section class="projet-gauche">
+          <div class="projet-gauche">
             <div class="projet">
               <a href="https://monturet.femin-in.eu/">
                 <p>“Femin’In” - Matthieu Monturet</p>
@@ -98,17 +97,19 @@
                 <img src="icons/logo-andreas.gif" alt="Logo Andreas Lopez">
               </a>
             </div>
-          </section>
+          </div>
 
-          <section class="projet-droite">
+          <div class="projet-droite">
             <div class="projet">
               <p>“Femin’history” - Maëlle Marchal</p>
               <img src="icons/logo-maelle.png" alt="Logo Maëlle Marchal"> 
             </div>
 
             <div class="projet">
-              <p>“Le féminisme à travers l’histoire” - Maxime Mercier</p>
-              <img src="icons/logo-maxime.png" alt="Logo Maxime Mercier">
+              <a href="https://lefeminismeatraverslhistoire.mercier-maxime.com/">
+                <p>“Le féminisme à travers l’histoire” - Maxime Mercier</p>
+                <img src="icons/logo-maxime.png" alt="Logo Maxime Mercier">
+              </a>
             </div>
 
             <div class="projet">
@@ -118,7 +119,7 @@
               </a>
             </div>
 
-          </section>
+          </div>
         </section>
       </main>
       
@@ -133,4 +134,4 @@
         </footer>
 
     </body>
-    </html>
+</html>
