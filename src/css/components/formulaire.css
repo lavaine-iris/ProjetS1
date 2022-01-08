@@ -1,6 +1,7 @@
 /*Mise en forme du formulaire*/
 #nom__contact{
-    position: relative; 
+    position: absolute; 
+    top: 450px;
     margin-left: 60px;
     width: 270px;
     font-family: var(--font-home);
@@ -8,7 +9,8 @@
 }
 
 #prenom__contact {
-    position: relative;
+    position: absolute;
+    top: 550px;
     margin-left: 60px;
     width: 270px;
     font-family: var(--font-home);
@@ -16,7 +18,8 @@
   }
   
 #email__contact {
-    position: relative;
+    position: absolute;
+    top: 650px;
     margin-left: 60px;
     width: 270px;
     font-family: var(--font-home);
@@ -24,7 +27,8 @@
   }
   
 #message__contact {
-    position: relative;
+    position: absolute;
+    top: 750px;
     margin-left: 60px;
     width: 270px;
     height: 90px;
@@ -33,13 +37,13 @@
   }
 
 .rectangle {
-    position: absolute;
+    position: relative;
     margin-left: 25px;
     margin-right: 30px;
-    margin-top: -10px;
-    bottom: 230px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width  : 325px;
-    height : 440px;
+    height : 540px;
     background : var(--blue);
   }
 
@@ -51,11 +55,10 @@
 .bouton--envoyer{
     font-family: var(--font-bouton);
     font-size: var(--title-home);
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    position: absolute;
+    bottom: 300px;
     right: 20px;
-    left: 200px;
+    left: 190px;
     display: inline-block;
     background-color: var(--white);
     border: 4px double black;
