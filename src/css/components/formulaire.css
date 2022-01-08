@@ -1,5 +1,5 @@
 /*Mise en forme du formulaire*/
-.nom__contact{
+#nom__contact{
     position: relative; 
     margin-left: 60px;
     width: 270px;
@@ -7,7 +7,7 @@
     font-size: var(--text-sm);
 }
 
-.prenom__contact {
+#prenom__contact {
     position: relative;
     margin-left: 60px;
     width: 270px;
@@ -15,7 +15,7 @@
     font-size: var(--text-sm);
   }
   
-.email__contact {
+#email__contact {
     position: relative;
     margin-left: 60px;
     width: 270px;
@@ -23,7 +23,7 @@
     font-size: var(--text-sm);
   }
   
-.message__contact {
+#message__contact {
     position: relative;
     margin-left: 60px;
     width: 270px;
