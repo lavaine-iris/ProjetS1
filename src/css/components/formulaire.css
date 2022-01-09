@@ -9,6 +9,11 @@
     z-index: 10;
 }
 
+#nom{
+  height: 30px;
+  width: 255px;
+}
+
 #prenom__contact {
     position: absolute;
     top: 550px;
@@ -18,6 +23,11 @@
     font-size: var(--text-sm);
     z-index: 10;
   }
+
+#prenom{
+  height: 30px;
+  width: 255px;
+}
   
 #email__contact {
     position: absolute;
@@ -28,6 +38,11 @@
     font-size: var(--text-sm);
     z-index: 10;
   }
+
+#email{
+  height: 30px;
+  width: 255px;
+}
   
 #message__contact {
     position: absolute;
@@ -39,6 +54,11 @@
     z-index: 10;
   }
 
+#message{
+  height: 200px;
+  width: 255px;
+}
+
 .rectangle {
     position: relative;
     margin-left: 25px;
@@ -46,7 +66,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width  : 325px;
-    height : 540px;
+    height : 670px;
     background : var(--blue);
     z-index: 10;
   }
@@ -60,7 +80,7 @@
     font-family: var(--font-bouton);
     font-size: var(--title-home);
     position: absolute;
-    bottom: 300px;
+    bottom: 280px;
     right: 20px;
     left: 190px;
     display: inline-block;
