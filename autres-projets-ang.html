@@ -13,11 +13,11 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
 
-    <body  x-data="{ atTop: true }" class="couleurs-fond"> 
+  <body  x-data="{ atTop: true }" class="couleurs-fond"> 
 
-      <header class="header container" 
-              @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-              :class="{ 'header--atTop' : !atTop }">
+    <header class="header container" 
+            @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+            :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__start">
         <a href="home-page.html">
@@ -34,10 +34,10 @@
 
       <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
         <a href="autres-projets.html">
-        <img class="langue__fr" src="icons/site-francais.svg" alt="Icône drapeau France">
+          <img class="langue__fr" src="icons/site-francais.svg" alt="France Flag Icon">
         </a>
         <a href="autres-projets-ang.html">
-        <img class="langue__eng" src="icons/site-anglais.svg" alt="Icône drapeau Angleterre">
+          <img class="langue__eng" src="icons/site-anglais.svg" alt="England Flag Icon">
         </a>
         <ul class="menu__list list-unstyled">
           <li class="menu__item">
@@ -120,7 +120,6 @@
                 <img src="icons/logo-rose.png" alt="Logo Rose Menegain">
               </a>
             </div>
-
           </div>
       </section>
     </main>
@@ -130,11 +129,11 @@
         <h4 class="footer__title">Contact<br></h4>
         <h4>Iris Lavaine - Groupe B2<br></h4>
         <address class="footer__address">
-          <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a>
-          </address>
-          <h4 class="footer__title">Project carried out as part of an educational exercise at the <a href="http://mmimontbeliard.com/">MMi department in Montbeliard</a></h4>
+        <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a>
+        </address>
+        <h4 class="footer__title">Project carried out as part of an educational exercise at the <a href="http://mmimontbeliard.com/">MMi department in Montbeliard</a></h4>
 
       </footer>
 
-    </body>
-    </html>
+  </body>
+</html>

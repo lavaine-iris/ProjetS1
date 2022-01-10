@@ -13,33 +13,33 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
 
-      <body  x-data="{ atTop: true }" class="couleurs-fond"> 
+  <body  x-data="{ atTop: true }" class="couleurs-fond"> 
 
-        <header class="header container" 
-                @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-                :class="{ 'header--atTop' : !atTop }">
+    <header class="header container" 
+            @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+            :class="{ 'header--atTop' : !atTop }">
 
-        <div class="header__start">
-          <a href="/">
-            <img class="header__logo" src="icons/logo.svg" alt="logo Mobilization For Afghan Women">
-          </a>
-        </div>
+      <div class="header__start">
+        <a href="/">
+          <img class="header__logo" src="icons/logo.svg" alt="logo Mobilization For Afghan Women">
+        </a>
+      </div>
 
-        <button class="header__menu-btn menu-btn"
-          @pointerdown="menuIsOpen = !menuIsOpen" 
-          :class="menuIsOpen && 'menu-btn--open'">
-          <span class="menu-btn__bar"></span>
-        </button>
+      <button class="header__menu-btn menu-btn"
+        @pointerdown="menuIsOpen = !menuIsOpen" 
+        :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
+      </button>
 
 
-        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-          <a href="autres-projets.html">
+      <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+        <a href="autres-projets.html">
           <img class="langue__fr" src="icons/site-francais.svg" alt="Icône drapeau France">
-          </a>
-          <a href="autres-projets-ang.html">
+        </a>
+        <a href="autres-projets-ang.html">
           <img class="langue__eng" src="icons/site-anglais.svg" alt="Icône drapeau Angleterre">
-          </a>
-          <ul class="menu__list list-unstyled">
+        </a>
+        <ul class="menu__list list-unstyled">
             <li class="menu__item">
               <a class="menu__link" href="index.html">Accueil</a>
             </li>
@@ -61,7 +61,7 @@
             <li class="menu__item">
               <a class="menu__link" href="contact.html">Contact</a>
             </li>
-          </ul>
+        </ul>
         </nav>
       </header>
 
@@ -122,18 +122,18 @@
             </div>
 
           </div>
-        </section>
-      </main>
+      </section>
+    </main>
       
-        <footer class="footer container">
+      <footer class="footer container">
 
-          <h4 class="footer__title">Contact<br></h4>
-          <h4>Iris Lavaine - Groupe B2<br></h4>
-          <address class="footer__address">
-          <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a></address>
-          <h4 class="footer__title">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></h4>
+        <h4 class="footer__title">Contact<br></h4>
+        <h4>Iris Lavaine - Groupe B2<br></h4>
+        <address class="footer__address">
+        <a href="mailto:lavaineiris@gmail.com">lavaineiris@gmail.com</a></address>
+        <h4 class="footer__title">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></h4>
 
-        </footer>
+      </footer>
 
-    </body>
+  </body>
 </html>
